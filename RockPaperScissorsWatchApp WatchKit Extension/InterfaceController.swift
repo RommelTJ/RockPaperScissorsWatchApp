@@ -11,7 +11,49 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    @IBOutlet weak var aiChoiceImage: WKInterfaceImage!
+    @IBOutlet weak var resultLabel: WKInterfaceLabel!
+    var options = ["rock.png", "paper.png", "scissors.png"]
+    
+    @IBAction func doRock() {
+        var randomNumber = Int(arc4random_uniform(3))
+        aiChoiceImage.setImageNamed(options[randomNumber])
+        
+        if randomNumber == 0 {
+            resultLabel.setText("Tie!")
+        } else if randomNumber == 1 {
+            resultLabel.setText("You Lose!")
+        } else if randomNumber == 2 {
+            resultLabel.setText("You Win!")
+        }
+    }
+    
+    @IBAction func doPaper() {
+        var randomNumber = Int(arc4random_uniform(3))
+        aiChoiceImage.setImageNamed(options[randomNumber])
+        
+        if randomNumber == 0 {
+            resultLabel.setText("You Win!")
+        } else if randomNumber == 1 {
+            resultLabel.setText("Tie!")
+        } else if randomNumber == 2 {
+            resultLabel.setText("You Lose!")
+        }
+    }
+    
+    @IBAction func doScissors() {
+        var randomNumber = Int(arc4random_uniform(3))
+        aiChoiceImage.setImageNamed(options[randomNumber])
+        
+        if randomNumber == 0 {
+            resultLabel.setText("You Lose!")
+        } else if randomNumber == 1 {
+            resultLabel.setText("You Win!")
+        } else if randomNumber == 2 {
+            resultLabel.setText("Tie!")
+        }
+    }
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

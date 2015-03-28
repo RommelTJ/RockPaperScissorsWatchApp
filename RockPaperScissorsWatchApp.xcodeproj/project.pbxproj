@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7748DA421AC67224005AE622 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 7748DA3F1AC67224005AE622 /* paper.png */; };
+		7748DA431AC67224005AE622 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 7748DA401AC67224005AE622 /* rock.png */; };
+		7748DA441AC67224005AE622 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 7748DA411AC67224005AE622 /* scissors.png */; };
 		77F48CCC1AC520AB00FAEC02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F48CCB1AC520AB00FAEC02 /* AppDelegate.swift */; };
 		77F48CCE1AC520AB00FAEC02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F48CCD1AC520AB00FAEC02 /* ViewController.swift */; };
 		77F48CD11AC520AB00FAEC02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F48CCF1AC520AB00FAEC02 /* Main.storyboard */; };
@@ -61,6 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7748DA3F1AC67224005AE622 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		7748DA401AC67224005AE622 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		7748DA411AC67224005AE622 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
 		77F48CC61AC520AB00FAEC02 /* RockPaperScissorsWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissorsWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F48CCA1AC520AB00FAEC02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77F48CCB1AC520AB00FAEC02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				77F48D031AC520B700FAEC02 /* Interface.storyboard */,
+				7748DA3F1AC67224005AE622 /* paper.png */,
+				7748DA401AC67224005AE622 /* rock.png */,
+				7748DA411AC67224005AE622 /* scissors.png */,
 				77F48D061AC520B700FAEC02 /* Images.xcassets */,
 				77F48D011AC520B700FAEC02 /* Supporting Files */,
 			);
@@ -357,6 +366,9 @@
 			files = (
 				77F48D051AC520B700FAEC02 /* Interface.storyboard in Resources */,
 				77F48D071AC520B700FAEC02 /* Images.xcassets in Resources */,
+				7748DA431AC67224005AE622 /* rock.png in Resources */,
+				7748DA441AC67224005AE622 /* scissors.png in Resources */,
+				7748DA421AC67224005AE622 /* paper.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +655,7 @@
 				77F48CE71AC520AB00FAEC02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77F48CE81AC520AB00FAEC02 /* Build configuration list for PBXNativeTarget "RockPaperScissorsWatchAppTests" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +664,7 @@
 				77F48CEA1AC520AB00FAEC02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77F48D0B1AC520B700FAEC02 /* Build configuration list for PBXNativeTarget "RockPaperScissorsWatchApp WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +673,7 @@
 				77F48D0D1AC520B700FAEC02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77F48D0E1AC520B700FAEC02 /* Build configuration list for PBXNativeTarget "RockPaperScissorsWatchApp WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -667,6 +682,7 @@
 				77F48D101AC520B700FAEC02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

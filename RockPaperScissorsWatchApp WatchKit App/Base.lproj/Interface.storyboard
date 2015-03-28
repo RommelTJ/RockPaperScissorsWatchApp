@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RockPaperScissorsWatchApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="67" alignment="center" id="pdL-zo-ze2">
+                            <items>
+                                <button width="0.3333333" height="0.80000000000000004" alignment="left" backgroundImage="rock.png" id="oni-eR-hbC">
+                                    <connections>
+                                        <action selector="doRock" destination="AgC-eL-Hgc" id="UQF-td-a5r"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" height="0.80000000000000004" alignment="left" backgroundImage="paper.png" id="evL-ZU-blR">
+                                    <connections>
+                                        <action selector="doPaper" destination="AgC-eL-Hgc" id="Ofr-Vg-D1s"/>
+                                    </connections>
+                                </button>
+                                <button width="0.3333333" height="0.80000000000000004" alignment="left" backgroundImage="scissors.png" id="iXQ-mR-UWH">
+                                    <connections>
+                                        <action selector="doScissors" destination="AgC-eL-Hgc" id="5rV-xp-Cjc"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <imageView width="50" height="50" alignment="center" id="Fbp-Ng-OqI"/>
+                        <label alignment="center" text="Make a Choice!" textAlignment="center" id="tKO-c4-5zf"/>
+                    </items>
+                    <connections>
+                        <outlet property="aiChoiceImage" destination="Fbp-Ng-OqI" id="tAj-uo-UD6"/>
+                        <outlet property="resultLabel" destination="tKO-c4-5zf" id="eX0-CL-0Xn"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -31,7 +59,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="RockPaperScissorsWatchApp_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
